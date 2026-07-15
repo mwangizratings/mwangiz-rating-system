@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mwangiz Beauty Parlor Customer Rating System
 
-## Getting Started
+Production-ready Version 1 foundation for the Mwangiz Beauty Parlor customer feedback flow.
 
-First, run the development server:
+## Stack
+
+- Next.js 15 App Router
+- TypeScript
+- Tailwind CSS
+- shadcn/ui-style primitives
+- Lucide React
+- Framer Motion
+- Supabase
+- Zod
+
+## Routes
+
+- `/` - mobile-first customer rating page
+- `/thank-you` - post-submission thank-you page
+- `POST /api/feedback` - customer feedback submission endpoint
+
+## Local Development
+
+Copy the environment template first:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Fill in the Supabase values and `IP_HASH_SECRET`, then run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Validation
 
-## Learn More
+```bash
+npm run lint
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Backend Contract
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The implemented endpoint is:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `POST /api/feedback`
 
-## Deploy on Vercel
+Expected JSON payload:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```json
+{
+  "rating": 5,
+  "comment": "Optional customer feedback text",
+  "deviceId": "mwangiz:anonymous-device-id"
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Expected success response:
+
+```json
+{
+  "success": true
+}
+```
+
+See [SETUP.md](./SETUP.md) for Supabase setup, migration instructions, Vercel environment variables, and backend verification.
