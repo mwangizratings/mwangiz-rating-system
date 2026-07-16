@@ -10,14 +10,19 @@ Production-ready Version 1 foundation for the Mwangiz Beauty Parlor customer fee
 - shadcn/ui-style primitives
 - Lucide React
 - Framer Motion
+- Recharts
 - Supabase
 - Zod
 
 ## Routes
 
-- `/` - mobile-first customer rating page
+- `/` - branch-link guidance page
+- `/b/[slug]` - mobile-first branch-specific customer rating page
 - `/thank-you` - post-submission thank-you page
 - `POST /api/feedback` - customer feedback submission endpoint
+- `/admin/login` - Supabase Magic Link admin login
+- `/admin` - protected admin dashboard
+- `/admin/branches` - protected branch management and QR code generation
 
 ## Local Development
 
@@ -53,7 +58,8 @@ Expected JSON payload:
 {
   "rating": 5,
   "comment": "Optional customer feedback text",
-  "deviceId": "mwangiz:anonymous-device-id"
+  "deviceId": "mwangiz:anonymous-device-id",
+  "branchId": "branch-uuid"
 }
 ```
 

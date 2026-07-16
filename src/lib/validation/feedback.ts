@@ -35,6 +35,7 @@ export const feedbackRequestSchema = z
     comment: commentSchema,
     deviceId: deviceIdSchema.optional(),
     device_id: deviceIdSchema.optional(),
+    branchId: z.string().uuid("Branch ID is required"),
   })
   .strict()
   .superRefine((value, context) => {
@@ -62,6 +63,7 @@ export const feedbackRequestSchema = z
     rating: value.rating,
     comment: value.comment ?? null,
     deviceId: value.deviceId ?? value.device_id ?? "",
+    branchId: value.branchId,
   }));
 
 export type FeedbackRequest = z.infer<typeof feedbackRequestSchema>;

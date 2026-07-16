@@ -2,7 +2,10 @@ import { createSupabaseServiceRoleClient } from "@/lib/supabase/server";
 
 const FEEDBACK_WINDOW_HOURS = 24;
 
-export async function hasRecentFeedbackFromDevice(deviceId: string) {
+export async function hasRecentFeedbackFromDevice(
+  deviceId: string,
+  branchId: string,
+) {
   const supabase = createSupabaseServiceRoleClient();
   const since = new Date(
     Date.now() - FEEDBACK_WINDOW_HOURS * 60 * 60 * 1000,
@@ -12,6 +15,7 @@ export async function hasRecentFeedbackFromDevice(deviceId: string) {
     .from("ratings")
     .select("id")
     .eq("device_id", deviceId)
+    .eq("branch_id", branchId)
     .gte("created_at", since)
     .limit(1);
 

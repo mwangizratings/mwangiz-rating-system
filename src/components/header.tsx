@@ -1,4 +1,8 @@
-export function Header() {
+type HeaderProps = {
+  branchName?: string;
+};
+
+export function Header({ branchName }: HeaderProps) {
   return (
     <header className="space-y-5 text-center">
       <div
@@ -17,6 +21,11 @@ export function Header() {
         <h1 className="text-3xl font-semibold leading-tight text-[#2b1836] sm:text-4xl">
           Welcome to Mwangiz Beauty Parlor
         </h1>
+        {branchName ? (
+          <p className="mx-auto inline-flex rounded-full bg-[#fff3c6] px-4 py-2 text-sm font-semibold text-[#5f3c14]">
+            {branchName}
+          </p>
+        ) : null}
         <p className="mx-auto max-w-sm text-base leading-7 text-[#6f6077]">
           Thank you for visiting us today.
         </p>

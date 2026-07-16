@@ -9,6 +9,8 @@ type PublicSupabaseEnv = {
   supabaseAnonKey: string;
 };
 
+const DEFAULT_PUBLIC_SITE_URL = "https://rate-mwangiz.vercel.app";
+
 function readRequiredEnv(key: string) {
   const value = process.env[key];
 
@@ -28,8 +30,30 @@ export function getServerEnv(): ServerEnv {
 }
 
 export function getPublicSupabaseEnv(): PublicSupabaseEnv {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  if (!supabaseUrl) {
+    throw new Error(
+      "Missing required environment variable: NEXT_PUBLIC_SUPABASE_URL",
+    );
+  }
+
+  if (!supabaseAnonKey) {
+    throw new Error(
+      "Missing required environment variable: NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    );
+  }
+
   return {
-    supabaseUrl: readRequiredEnv("NEXT_PUBLIC_SUPABASE_URL"),
-    supabaseAnonKey: readRequiredEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY"),
+    supabaseUrl,
+    supabaseAnonKey,
   };
+}
+
+export function getPublicSiteUrl() {
+  return (
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/g, "") ??
+    DEFAULT_PUBLIC_SITE_URL
+  );
 }

@@ -66,18 +66,36 @@ export async function POST(request: NextRequest) {
     }
 
     const feedback = validationResult.data;
+    const supabase = createSupabaseServiceRoleClient();
+    const { data: branch, error: branchError } = await supabase
+      .from("branches")
+      .select("id")
+      .eq("id", feedback.branchId)
+      .eq("is_active", true)
+      .maybeSingle();
+
+    if (branchError) {
+      console.error("Failed to verify branch", branchError);
+      return errorResponse("Unable to submit feedback", 500);
+    }
+
+    if (!branch) {
+      return errorResponse("Branch not found", 404);
+    }
+
     const hasRecentFeedback = await hasRecentFeedbackFromDevice(
       feedback.deviceId,
+      feedback.branchId,
     );
 
     if (hasRecentFeedback) {
       return errorResponse(DUPLICATE_FEEDBACK_MESSAGE, 429);
     }
 
-    const supabase = createSupabaseServiceRoleClient();
     const rating: RatingInsert = {
       rating: feedback.rating,
       comment: feedback.comment,
+      branch_id: feedback.branchId,
       device_id: feedback.deviceId,
       ip_hash: hashIpAddress(getClientIp(request)),
     };

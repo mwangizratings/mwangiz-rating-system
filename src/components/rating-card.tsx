@@ -15,7 +15,14 @@ type FeedbackApiResponse = {
   message?: string;
 };
 
-export function RatingCard() {
+type RatingCardProps = {
+  branch: {
+    id: string;
+    name: string;
+  };
+};
+
+export function RatingCard({ branch }: RatingCardProps) {
   const router = useRouter();
   const [rating, setRating] = useState(0);
   const [feedback, setFeedback] = useState("");
@@ -60,6 +67,7 @@ export function RatingCard() {
           rating,
           comment: feedback,
           deviceId: getOrCreateDeviceId(),
+          branchId: branch.id,
         }),
       });
 
@@ -96,7 +104,7 @@ export function RatingCard() {
         className="rounded-[2rem] border border-white/80 bg-white/88 px-5 py-7 shadow-[0_24px_80px_rgba(61,28,82,0.14)] backdrop-blur sm:px-8 sm:py-9"
       >
         <div className="space-y-8">
-          <Header />
+          <Header branchName={branch.name} />
 
           <div className="h-px bg-gradient-to-r from-transparent via-[#ead9f0] to-transparent" />
 
