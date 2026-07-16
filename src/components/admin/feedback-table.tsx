@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { BrandLogo } from "@/components/brand-logo";
 import {
   formatDateTime,
   getCommentPreview,
@@ -133,9 +134,7 @@ export function FeedbackTable({ feedback, filters }: FeedbackTableProps) {
         </>
       ) : (
         <div className="px-5 py-12 text-center">
-          <div className="mx-auto grid size-16 place-items-center rounded-3xl bg-[#fff3c6] text-2xl text-[#6d3a8f]">
-            M
-          </div>
+          <BrandLogo className="mx-auto size-20" imageClassName="size-16" />
           <h3 className="mt-5 text-lg font-semibold text-[#2b1836]">
             No customer feedback has been received yet.
           </h3>

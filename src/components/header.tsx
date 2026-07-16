@@ -1,3 +1,5 @@
+import { BrandLogo } from "@/components/brand-logo";
+
 type HeaderProps = {
   branchName?: string;
 };
@@ -5,14 +7,7 @@ type HeaderProps = {
 export function Header({ branchName }: HeaderProps) {
   return (
     <header className="space-y-5 text-center">
-      <div
-        aria-label="Mwangiz Beauty Parlor logo placeholder"
-        className="mx-auto grid size-20 place-items-center rounded-[2rem] border border-[#e8d7a3] bg-[#fff8e8] shadow-[0_18px_45px_rgba(98,55,131,0.12)]"
-      >
-        <div className="grid size-14 place-items-center rounded-2xl bg-[#6d3a8f] text-2xl font-bold text-[#ffd875]">
-          M
-        </div>
-      </div>
+      <BrandLogo className="mx-auto" />
 
       <div className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#a47b17]">

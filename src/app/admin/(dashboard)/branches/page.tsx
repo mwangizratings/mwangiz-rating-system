@@ -2,6 +2,7 @@ import {
   createBranchAction,
   updateBranchAction,
 } from "@/app/admin/(dashboard)/branches/actions";
+import { BrandLogo } from "@/components/brand-logo";
 import { BranchQrCode } from "@/components/admin/branch-qr-code";
 import { Input } from "@/components/ui/input";
 import { BranchDataError, fetchBranches } from "@/lib/admin/branches";
@@ -133,9 +134,7 @@ export default async function BranchesPage({ searchParams }: BranchesPageProps) 
             })
           ) : (
             <div className="rounded-3xl border border-[#ead9f0] bg-white/88 px-5 py-12 text-center">
-              <div className="mx-auto grid size-16 place-items-center rounded-3xl bg-[#fff3c6] text-2xl text-[#6d3a8f]">
-                M
-              </div>
+              <BrandLogo className="mx-auto size-20" imageClassName="size-16" />
               <h3 className="mt-5 text-lg font-semibold text-[#2b1836]">
                 No branches yet
               </h3>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { GitBranch, LayoutDashboard } from "lucide-react";
 import type { ReactNode } from "react";
 
+import { BrandLogo } from "@/components/brand-logo";
 import { SignOutButton } from "@/components/admin/sign-out-button";
 
 type AdminShellProps = {
@@ -15,9 +16,7 @@ export function AdminShell({ adminEmail, children }: AdminShellProps) {
       <div className="mx-auto flex min-h-dvh w-full max-w-7xl">
         <aside className="sticky top-0 hidden h-dvh w-72 shrink-0 border-r border-[#ead9f0]/80 bg-white/72 px-6 py-6 backdrop-blur md:block">
           <div className="flex items-center gap-3">
-            <div className="grid size-12 place-items-center rounded-2xl bg-[#6d3a8f] text-lg font-bold text-[#ffd875]">
-              M
-            </div>
+            <BrandLogo compact />
             <div>
               <p className="text-sm font-semibold text-[#2b1836]">Mwangiz</p>
               <p className="text-xs text-[#766a7c]">Rating System</p>
