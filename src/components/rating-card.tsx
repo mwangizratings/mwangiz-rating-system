@@ -101,7 +101,7 @@ export function RatingCard({ branch }: RatingCardProps) {
     >
       <form
         onSubmit={handleSubmit}
-        className="rounded-[2rem] border border-white/90 bg-white/94 px-5 py-7 shadow-[0_30px_90px_rgba(61,28,82,0.22)] ring-1 ring-[#ead9f0]/60 backdrop-blur-md sm:px-8 sm:py-9"
+        className="rounded-[2rem] border border-white/95 bg-white/96 px-5 py-7 shadow-[0_34px_100px_rgba(36,32,58,0.26)] ring-1 ring-white/70 backdrop-blur-xl sm:px-8 sm:py-9"
       >
         <div className="space-y-8">
           <Header branchName={branch.name} />

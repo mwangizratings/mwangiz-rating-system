@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-label="Abstract beauty wallpaper background">
+  <defs>
+    <pattern id="pearls" width="88" height="88" patternUnits="userSpaceOnUse">
+      <circle cx="16" cy="18" r="3.5" fill="#ffffff" opacity="0.62"/>
+      <circle cx="60" cy="58" r="2.6" fill="#f1c95f" opacity="0.58"/>
+    </pattern>
+    <filter id="paperShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#24203a" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soften">
+      <feGaussianBlur stdDeviation="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="#f3f0ea"/>
+  <rect width="1600" height="1200" fill="url(#pearls)" opacity="0.52"/>
+
+  <path d="M-90 246 C178 112 380 168 555 292 C768 444 926 418 1148 230 C1305 96 1487 76 1690 166 L1690 -80 L-90 -80 Z" fill="#255f63" opacity="0.92"/>
+  <path d="M-110 1022 C148 870 410 900 604 1010 C824 1136 1030 1108 1218 982 C1390 866 1512 874 1696 982 L1696 1288 L-110 1288 Z" fill="#7f4b8f" opacity="0.9"/>
+  <path d="M1048 -100 C1232 88 1250 296 1128 430 C1005 565 770 548 662 374 C548 192 654 4 832 -82 Z" fill="#e56f76" opacity="0.72" filter="url(#paperShadow)"/>
+  <path d="M-140 610 C36 468 198 456 316 552 C438 650 398 832 232 904 C74 972 -95 904 -180 758 Z" fill="#f1c95f" opacity="0.7" filter="url(#paperShadow)"/>
+  <path d="M1252 522 C1436 430 1580 478 1662 630 C1748 790 1638 982 1458 1002 C1280 1022 1138 886 1148 714 C1154 622 1192 558 1252 522 Z" fill="#d75f9b" opacity="0.52" filter="url(#paperShadow)"/>
+
+  <g opacity="0.42" filter="url(#soften)">
+    <path d="M278 210 C370 114 512 92 650 168" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M318 250 C426 164 528 154 626 204" fill="none" stroke="#f1c95f" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1008 878 C1110 774 1238 748 1378 804" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M1016 932 C1134 844 1232 836 1328 884" fill="none" stroke="#f1c95f" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(214 302) rotate(-16)" opacity="0.72" filter="url(#paperShadow)">
+    <path d="M0 86 C58 -12 180 -26 250 54 C184 84 112 110 0 86 Z" fill="#ffffff"/>
+    <path d="M40 78 C100 44 156 42 214 62" fill="none" stroke="#255f63" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(1122 180) rotate(18)" opacity="0.68" filter="url(#paperShadow)">
+    <path d="M0 122 C56 4 188 -30 288 42 C222 94 122 140 0 122 Z" fill="#fff7df"/>
+    <path d="M58 104 C122 64 184 54 248 72" fill="none" stroke="#7f4b8f" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(376 822) rotate(11)" opacity="0.72" filter="url(#paperShadow)">
+    <path d="M0 136 C76 12 232 -20 338 76 C246 126 126 164 0 136 Z" fill="#ffffff"/>
+    <path d="M72 112 C150 72 228 68 292 90" fill="none" stroke="#e56f76" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.58">
+    <circle cx="742" cy="170" r="10" fill="#ffffff"/>
+    <circle cx="790" cy="214" r="6" fill="#f1c95f"/>
+    <circle cx="858" cy="164" r="8" fill="#ffffff"/>
+    <circle cx="982" cy="636" r="9" fill="#f1c95f"/>
+    <circle cx="1032" cy="692" r="6" fill="#ffffff"/>
+    <circle cx="574" cy="610" r="8" fill="#ffffff"/>
+    <circle cx="512" cy="674" r="6" fill="#f1c95f"/>
+  </g>
+
+  <g opacity="0.24">
+    <path d="M708 0 L708 1200" stroke="#255f63" stroke-width="1"/>
+    <path d="M892 0 L892 1200" stroke="#7f4b8f" stroke-width="1"/>
+    <path d="M0 430 L1600 430" stroke="#e56f76" stroke-width="1"/>
+    <path d="M0 770 L1600 770" stroke="#255f63" stroke-width="1"/>
+  </g>
+</svg>

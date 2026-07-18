@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Textarea } from "@/components/ui/textarea";
 
 const feedbackMessages: Record<number, string> = {
-  5: "We're thrilled you had an amazing experience! We'd love to know what stood out.",
+  5: "We're exited you had an amazing experience! We'd love to know what stood out.",
   4: "Thank you! What could we improve to make your next visit a perfect 5-star experience?",
   3: "We'd really appreciate knowing what we could do better.",
   2: "We're sorry your experience wasn't what you expected. Please tell us how we can improve.",
