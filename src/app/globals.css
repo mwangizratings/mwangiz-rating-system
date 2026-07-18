@@ -67,6 +67,37 @@ body::before {
     linear-gradient(135deg, #fffaf0 0%, #ffffff 46%, #fbf4ff 100%);
 }
 
+.salon-page {
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(255, 250, 240, 0.92) 0%,
+      rgba(255, 255, 255, 0.76) 42%,
+      rgba(251, 244, 255, 0.88) 100%
+    ),
+    radial-gradient(
+      circle at 18% 14%,
+      rgba(255, 216, 117, 0.38),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 85% 78%,
+      rgba(109, 58, 143, 0.26),
+      transparent 30rem
+    ),
+    url("/backgrounds/salon-still-life.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .salon-page {
+    background-position: 52% center;
+  }
+}
+
 ::selection {
   background: rgba(215, 165, 31, 0.32);
   color: #2b1836;

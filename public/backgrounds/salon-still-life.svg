@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-label="Soft salon equipment background">
+  <defs>
+    <linearGradient id="table" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff8e8"/>
+      <stop offset="0.52" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#fbf0ff"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="28%" cy="18%" r="70%">
+      <stop offset="0" stop-color="#ffe7a4" stop-opacity="0.82"/>
+      <stop offset="0.62" stop-color="#ffe7a4" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffe7a4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violet" cx="76%" cy="72%" r="66%">
+      <stop offset="0" stop-color="#7b459c" stop-opacity="0.34"/>
+      <stop offset="0.72" stop-color="#7b459c" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#7b459c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#3d1c52" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#table)"/>
+  <rect width="1600" height="1200" fill="url(#warm)"/>
+  <rect width="1600" height="1200" fill="url(#violet)"/>
+
+  <g opacity="0.42" filter="url(#softShadow)">
+    <path d="M-70 890 C210 775 446 808 690 908 C942 1012 1160 1040 1680 865 L1680 1200 L-70 1200 Z" fill="#fff3c6"/>
+    <path d="M-40 1015 C310 930 578 948 808 1037 C1024 1122 1270 1102 1640 978" fill="none" stroke="#d7a51f" stroke-width="5" stroke-linecap="round" opacity="0.34"/>
+  </g>
+
+  <g transform="translate(1050 215) rotate(-14)" opacity="0.54" filter="url(#softShadow)">
+    <rect x="0" y="56" width="295" height="96" rx="48" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <path d="M50 58 C62 14 105 -6 155 8 C205 22 234 54 246 92" fill="none" stroke="#6d3a8f" stroke-width="18" stroke-linecap="round"/>
+    <rect x="218" y="92" width="200" height="54" rx="27" fill="#6d3a8f" opacity="0.9"/>
+    <rect x="260" y="146" width="92" height="24" rx="12" fill="#d7a51f" opacity="0.75"/>
+    <circle cx="96" cy="104" r="24" fill="#fff3c6" stroke="#d7a51f" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(185 270) rotate(12)" opacity="0.58" filter="url(#softShadow)">
+    <rect x="0" y="0" width="76" height="390" rx="38" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <path d="M38 26 L38 360" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round" opacity="0.65"/>
+    <g stroke="#d7a51f" stroke-width="5" stroke-linecap="round" opacity="0.8">
+      <path d="M74 56 L118 44"/>
+      <path d="M74 92 L125 84"/>
+      <path d="M74 128 L118 124"/>
+      <path d="M74 164 L128 164"/>
+      <path d="M74 200 L118 204"/>
+      <path d="M74 236 L125 244"/>
+      <path d="M74 272 L116 284"/>
+      <path d="M74 308 L108 324"/>
+    </g>
+  </g>
+
+  <g transform="translate(515 185) rotate(-22)" opacity="0.5" filter="url(#softShadow)">
+    <circle cx="82" cy="86" r="40" fill="#ffffff" stroke="#6d3a8f" stroke-width="9"/>
+    <circle cx="205" cy="86" r="40" fill="#ffffff" stroke="#6d3a8f" stroke-width="9"/>
+    <path d="M114 112 L298 250" stroke="#6d3a8f" stroke-width="12" stroke-linecap="round"/>
+    <path d="M174 112 L-10 250" stroke="#6d3a8f" stroke-width="12" stroke-linecap="round"/>
+    <path d="M140 120 C152 140 164 140 176 120" fill="none" stroke="#d7a51f" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(1030 690) rotate(16)" opacity="0.5" filter="url(#softShadow)">
+    <rect x="54" y="0" width="86" height="280" rx="43" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="74" y="22" width="46" height="190" rx="23" fill="#7b459c" opacity="0.7"/>
+    <path d="M96 232 C168 232 222 268 242 333 C258 386 232 440 170 455 C90 474 21 426 16 348 C12 284 42 244 96 232Z" fill="#fff3c6" stroke="#d7a51f" stroke-width="6"/>
+    <g stroke="#6d3a8f" stroke-width="5" stroke-linecap="round" opacity="0.52">
+      <path d="M74 294 C110 340 130 390 126 444"/>
+      <path d="M118 286 C152 334 172 386 174 436"/>
+      <path d="M160 304 C188 344 198 384 192 421"/>
+    </g>
+  </g>
+
+  <g transform="translate(305 760) rotate(-10)" opacity="0.55" filter="url(#softShadow)">
+    <rect x="0" y="90" width="88" height="250" rx="44" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="16" y="0" width="56" height="115" rx="20" fill="#6d3a8f" opacity="0.82"/>
+    <rect x="12" y="132" width="64" height="154" rx="32" fill="#fff3c6" stroke="#d7a51f" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(1188 820) rotate(-22)" opacity="0.52" filter="url(#softShadow)">
+    <rect x="0" y="0" width="270" height="58" rx="29" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <path d="M34 58 L22 202" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M78 58 L70 216" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M122 58 L124 210" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M166 58 L178 206" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M210 58 L232 190" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.34">
+    <path d="M716 740 C815 656 953 666 1030 742 C919 768 815 771 716 740Z" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <path d="M776 735 C844 696 922 700 976 734" fill="none" stroke="#d7a51f" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
