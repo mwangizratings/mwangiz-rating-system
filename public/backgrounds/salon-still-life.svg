@@ -1,93 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-label="Soft salon equipment background">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-label="Soft beauty salon equipment background">
   <defs>
-    <linearGradient id="table" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#fff8e8"/>
-      <stop offset="0.52" stop-color="#ffffff"/>
+    <linearGradient id="base" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7e6"/>
+      <stop offset="0.48" stop-color="#ffffff"/>
       <stop offset="1" stop-color="#fbf0ff"/>
     </linearGradient>
-    <radialGradient id="warm" cx="28%" cy="18%" r="70%">
-      <stop offset="0" stop-color="#ffe7a4" stop-opacity="0.82"/>
-      <stop offset="0.62" stop-color="#ffe7a4" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#ffe7a4" stop-opacity="0"/>
+    <radialGradient id="warmWash" cx="18%" cy="18%" r="70%">
+      <stop offset="0" stop-color="#ffe4a3" stop-opacity="0.78"/>
+      <stop offset="0.62" stop-color="#ffe4a3" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffe4a3" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="violet" cx="76%" cy="72%" r="66%">
-      <stop offset="0" stop-color="#7b459c" stop-opacity="0.34"/>
-      <stop offset="0.72" stop-color="#7b459c" stop-opacity="0.08"/>
+    <radialGradient id="purpleWash" cx="84%" cy="76%" r="70%">
+      <stop offset="0" stop-color="#7b459c" stop-opacity="0.32"/>
+      <stop offset="0.68" stop-color="#7b459c" stop-opacity="0.1"/>
       <stop offset="1" stop-color="#7b459c" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#3d1c52" flood-opacity="0.14"/>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#3d1c52" flood-opacity="0.18"/>
     </filter>
   </defs>
 
-  <rect width="1600" height="1200" fill="url(#table)"/>
-  <rect width="1600" height="1200" fill="url(#warm)"/>
-  <rect width="1600" height="1200" fill="url(#violet)"/>
+  <rect width="1600" height="1200" fill="url(#base)"/>
+  <rect width="1600" height="1200" fill="url(#warmWash)"/>
+  <rect width="1600" height="1200" fill="url(#purpleWash)"/>
 
-  <g opacity="0.42" filter="url(#softShadow)">
-    <path d="M-70 890 C210 775 446 808 690 908 C942 1012 1160 1040 1680 865 L1680 1200 L-70 1200 Z" fill="#fff3c6"/>
-    <path d="M-40 1015 C310 930 578 948 808 1037 C1024 1122 1270 1102 1640 978" fill="none" stroke="#d7a51f" stroke-width="5" stroke-linecap="round" opacity="0.34"/>
+  <g opacity="0.5">
+    <path d="M-80 870 C210 790 435 820 688 918 C960 1023 1222 1034 1680 855 L1680 1200 L-80 1200 Z" fill="#fff3c6"/>
+    <path d="M-25 1022 C284 942 548 949 804 1038 C1054 1124 1294 1098 1648 978" fill="none" stroke="#d7a51f" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
   </g>
 
-  <g transform="translate(1050 215) rotate(-14)" opacity="0.54" filter="url(#softShadow)">
-    <rect x="0" y="56" width="295" height="96" rx="48" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
-    <path d="M50 58 C62 14 105 -6 155 8 C205 22 234 54 246 92" fill="none" stroke="#6d3a8f" stroke-width="18" stroke-linecap="round"/>
-    <rect x="218" y="92" width="200" height="54" rx="27" fill="#6d3a8f" opacity="0.9"/>
-    <rect x="260" y="146" width="92" height="24" rx="12" fill="#d7a51f" opacity="0.75"/>
-    <circle cx="96" cy="104" r="24" fill="#fff3c6" stroke="#d7a51f" stroke-width="5"/>
+  <!-- Left beauty cluster: polish, lipstick, compact, brush -->
+  <g transform="translate(126 202) rotate(-8)" opacity="0.72" filter="url(#shadow)">
+    <rect x="0" y="96" width="58" height="138" rx="28" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="12" y="48" width="34" height="60" rx="14" fill="#6d3a8f"/>
+    <rect x="10" y="136" width="38" height="70" rx="19" fill="#fff3c6" stroke="#d7a51f" stroke-width="4"/>
   </g>
 
-  <g transform="translate(185 270) rotate(12)" opacity="0.58" filter="url(#softShadow)">
-    <rect x="0" y="0" width="76" height="390" rx="38" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
-    <path d="M38 26 L38 360" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round" opacity="0.65"/>
-    <g stroke="#d7a51f" stroke-width="5" stroke-linecap="round" opacity="0.8">
-      <path d="M74 56 L118 44"/>
-      <path d="M74 92 L125 84"/>
-      <path d="M74 128 L118 124"/>
-      <path d="M74 164 L128 164"/>
-      <path d="M74 200 L118 204"/>
-      <path d="M74 236 L125 244"/>
-      <path d="M74 272 L116 284"/>
-      <path d="M74 308 L108 324"/>
+  <g transform="translate(235 320) rotate(18)" opacity="0.74" filter="url(#shadow)">
+    <rect x="0" y="58" width="52" height="150" rx="26" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="12" y="0" width="28" height="70" rx="14" fill="#d7a51f"/>
+    <path d="M14 0 C18 -28 34 -28 38 0Z" fill="#7b459c"/>
+  </g>
+
+  <g transform="translate(100 610) rotate(12)" opacity="0.68" filter="url(#shadow)">
+    <circle cx="82" cy="82" r="78" fill="#ffffff" stroke="#ead9f0" stroke-width="6"/>
+    <circle cx="82" cy="82" r="48" fill="#fbf0ff" stroke="#6d3a8f" stroke-width="5" opacity="0.7"/>
+    <path d="M38 82 L126 82" stroke="#d7a51f" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(302 725) rotate(-25)" opacity="0.72" filter="url(#shadow)">
+    <rect x="0" y="0" width="44" height="245" rx="22" fill="#6d3a8f"/>
+    <path d="M22 214 C90 232 130 284 128 344 C126 412 66 442 12 414 C-46 384 -42 310 18 268" fill="#fff3c6" stroke="#d7a51f" stroke-width="5"/>
+    <g stroke="#6d3a8f" stroke-width="4" stroke-linecap="round" opacity="0.52">
+      <path d="M20 284 C48 320 58 362 52 410"/>
+      <path d="M58 292 C82 326 92 362 88 398"/>
     </g>
   </g>
 
-  <g transform="translate(515 185) rotate(-22)" opacity="0.5" filter="url(#softShadow)">
-    <circle cx="82" cy="86" r="40" fill="#ffffff" stroke="#6d3a8f" stroke-width="9"/>
-    <circle cx="205" cy="86" r="40" fill="#ffffff" stroke="#6d3a8f" stroke-width="9"/>
-    <path d="M114 112 L298 250" stroke="#6d3a8f" stroke-width="12" stroke-linecap="round"/>
-    <path d="M174 112 L-10 250" stroke="#6d3a8f" stroke-width="12" stroke-linecap="round"/>
-    <path d="M140 120 C152 140 164 140 176 120" fill="none" stroke="#d7a51f" stroke-width="7" stroke-linecap="round"/>
+  <!-- Top accents: clips, perfume, flower-like cosmetic pads -->
+  <g transform="translate(462 120) rotate(10)" opacity="0.68" filter="url(#shadow)">
+    <rect x="0" y="0" width="160" height="34" rx="17" fill="#ffffff" stroke="#ead9f0" stroke-width="4"/>
+    <path d="M36 34 L26 118" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M72 34 L70 128" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M108 34 L118 112" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
   </g>
 
-  <g transform="translate(1030 690) rotate(16)" opacity="0.5" filter="url(#softShadow)">
-    <rect x="54" y="0" width="86" height="280" rx="43" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
-    <rect x="74" y="22" width="46" height="190" rx="23" fill="#7b459c" opacity="0.7"/>
-    <path d="M96 232 C168 232 222 268 242 333 C258 386 232 440 170 455 C90 474 21 426 16 348 C12 284 42 244 96 232Z" fill="#fff3c6" stroke="#d7a51f" stroke-width="6"/>
-    <g stroke="#6d3a8f" stroke-width="5" stroke-linecap="round" opacity="0.52">
-      <path d="M74 294 C110 340 130 390 126 444"/>
-      <path d="M118 286 C152 334 172 386 174 436"/>
-      <path d="M160 304 C188 344 198 384 192 421"/>
-    </g>
+  <g transform="translate(732 122) rotate(-7)" opacity="0.72" filter="url(#shadow)">
+    <rect x="30" y="44" width="92" height="128" rx="30" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="56" y="12" width="40" height="42" rx="16" fill="#d7a51f"/>
+    <path d="M50 88 C70 68 92 68 112 88" fill="none" stroke="#7b459c" stroke-width="6" stroke-linecap="round"/>
+    <rect x="52" y="112" width="48" height="26" rx="13" fill="#fff3c6"/>
   </g>
 
-  <g transform="translate(305 760) rotate(-10)" opacity="0.55" filter="url(#softShadow)">
-    <rect x="0" y="90" width="88" height="250" rx="44" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
-    <rect x="16" y="0" width="56" height="115" rx="20" fill="#6d3a8f" opacity="0.82"/>
-    <rect x="12" y="132" width="64" height="154" rx="32" fill="#fff3c6" stroke="#d7a51f" stroke-width="5"/>
+  <g transform="translate(962 120) rotate(12)" opacity="0.58">
+    <circle cx="0" cy="40" r="34" fill="#ffffff" stroke="#ead9f0" stroke-width="4"/>
+    <circle cx="52" cy="0" r="30" fill="#fff3c6" stroke="#d7a51f" stroke-width="4"/>
+    <circle cx="96" cy="48" r="36" fill="#fbf0ff" stroke="#7b459c" stroke-width="4"/>
   </g>
 
-  <g transform="translate(1188 820) rotate(-22)" opacity="0.52" filter="url(#softShadow)">
-    <rect x="0" y="0" width="270" height="58" rx="29" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
-    <path d="M34 58 L22 202" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
-    <path d="M78 58 L70 216" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
-    <path d="M122 58 L124 210" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
-    <path d="M166 58 L178 206" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
-    <path d="M210 58 L232 190" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+  <!-- Right salon cluster: dryer, scissors, comb, curler -->
+  <g transform="translate(1120 220) rotate(14)" opacity="0.76" filter="url(#shadow)">
+    <rect x="0" y="46" width="180" height="70" rx="35" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <path d="M30 46 C40 8 78 -8 118 4 C154 15 176 38 184 68" fill="none" stroke="#6d3a8f" stroke-width="14" stroke-linecap="round"/>
+    <rect x="142" y="80" width="118" height="42" rx="21" fill="#6d3a8f"/>
+    <rect x="174" y="122" width="62" height="20" rx="10" fill="#d7a51f"/>
+    <circle cx="66" cy="82" r="18" fill="#fff3c6" stroke="#d7a51f" stroke-width="4"/>
   </g>
 
-  <g opacity="0.34">
-    <path d="M716 740 C815 656 953 666 1030 742 C919 768 815 771 716 740Z" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
-    <path d="M776 735 C844 696 922 700 976 734" fill="none" stroke="#d7a51f" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(1285 430) rotate(-20)" opacity="0.72" filter="url(#shadow)">
+    <circle cx="52" cy="54" r="28" fill="#ffffff" stroke="#6d3a8f" stroke-width="7"/>
+    <circle cx="138" cy="54" r="28" fill="#ffffff" stroke="#6d3a8f" stroke-width="7"/>
+    <path d="M74 78 L206 184" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M118 78 L-14 184" stroke="#6d3a8f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M92 88 C102 102 112 102 122 88" fill="none" stroke="#d7a51f" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(1230 710) rotate(-14)" opacity="0.73" filter="url(#shadow)">
+    <rect x="0" y="0" width="210" height="42" rx="21" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <path d="M28 42 L20 144" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M62 42 L58 158" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M96 42 L98 154" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M130 42 L138 146" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
+    <path d="M164 42 L180 132" stroke="#6d3a8f" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(1034 820) rotate(18)" opacity="0.7" filter="url(#shadow)">
+    <rect x="0" y="0" width="48" height="220" rx="24" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="12" y="20" width="24" height="142" rx="12" fill="#7b459c" opacity="0.78"/>
+    <path d="M24 176 C82 190 116 232 112 278 C106 338 48 356 8 322 C-30 290 -22 220 24 176Z" fill="#fff3c6" stroke="#d7a51f" stroke-width="5"/>
+  </g>
+
+  <!-- Lower beauty counter details -->
+  <g transform="translate(560 850) rotate(-8)" opacity="0.64" filter="url(#shadow)">
+    <rect x="0" y="58" width="54" height="130" rx="27" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="12" y="0" width="30" height="70" rx="15" fill="#6d3a8f"/>
+    <path d="M14 96 L40 96" stroke="#d7a51f" stroke-width="5" stroke-linecap="round"/>
+    <path d="M16 126 L38 126" stroke="#d7a51f" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(780 835) rotate(8)" opacity="0.62" filter="url(#shadow)">
+    <path d="M0 84 C70 18 166 20 232 86 C156 108 74 110 0 84Z" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <path d="M54 80 C98 52 144 54 182 80" fill="none" stroke="#d7a51f" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(910 946) rotate(-12)" opacity="0.64" filter="url(#shadow)">
+    <rect x="0" y="0" width="120" height="46" rx="23" fill="#ffffff" stroke="#ead9f0" stroke-width="5"/>
+    <rect x="22" y="46" width="76" height="74" rx="22" fill="#fbf0ff" stroke="#7b459c" stroke-width="5"/>
+    <path d="M34 78 L86 78" stroke="#d7a51f" stroke-width="5" stroke-linecap="round"/>
   </g>
 </svg>
